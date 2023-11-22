@@ -28,8 +28,8 @@ struct ProductDetailView: View {
             VStack{
                 ScrollView(.horizontal){
                     HStack {
-                        ForEach(0..<4){ index in
-                            Image("sedia\(index + 1)") // Immagine con il nome carosello1, carosello2, ecc.
+                        ForEach(card.imageName, id: \.self){ img in
+                            Image(img) // Immagine con il nome carosello1, carosello2, ecc.
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
                                 .cornerRadius(10)
@@ -56,6 +56,7 @@ struct ProductDetailView: View {
                         .overlay(Capsule().stroke(Color.black, lineWidth: 2))
                     })
                     
+                    Spacer()
                     
                     Button(action: {
                         
@@ -98,11 +99,10 @@ struct ProductDetailView: View {
                         .lineLimit(nil)
                     Text(formatCurrency(value: card.price))
                         .font(.title).bold()
-                    
-                    
-                    
-                })
-                       
+                    }
+                )
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
                 
                 
             } //: VSTACK
@@ -113,5 +113,5 @@ struct ProductDetailView: View {
 }
 
 #Preview {
-    ProductDetailView(card: Card(imageName: "sediaDiLegno", title: "sedia di legno", price: 49, description: "Perfect for watching old TV Shows.", objectName: "chair", size: "22 x 22 x 22", color: "red"))
+    ProductDetailView(card: Card(imageName: ["chairFront","chairSide","chairBack"], title: "Placeholder", price: 49, description: "Placeholder", objectName: "chair_swan", size: "22 x 22 x 22", color: "red"))
 }

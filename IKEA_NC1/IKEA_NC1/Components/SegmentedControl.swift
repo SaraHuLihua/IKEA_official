@@ -10,7 +10,7 @@ import SwiftUI
 
 struct SegmentedControl: View {
     @State private var selection: Bool = true
-    var card : Card
+    var cards : [Card]
     
     var body: some View {
         VStack {
@@ -44,7 +44,7 @@ struct SegmentedControl: View {
         
         
         if selection == true {
-            GridProducts(cards: [card])
+            GridProducts(cards: cards)
         } else {
             GridRooms()
         }
@@ -52,7 +52,7 @@ struct SegmentedControl: View {
 }
 
 #Preview {
-    SegmentedControl(card: Card(imageName: "sediaDiLegno", title: "sedia di legno", price: 49, description: "Perfect for watching old TV Shows.", objectName: "chair", size: "22 x 22 x 22", color: "red"))
+    SegmentedControl(cards: [])
 
 }
 

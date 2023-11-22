@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var card: Card
+    var cards: [Card] = CardsViewModel().cards
     
     var body: some View {
 
@@ -22,7 +22,7 @@ struct ContentView: View {
                 
                 caroselloGrande()
                 
-                SegmentedControl(card: card)
+                SegmentedControl(cards: cards)
             } .toolbar{
                 ToolbarItem(placement: .topBarLeading) {
                     Button(action: {}, label: {
@@ -52,10 +52,6 @@ struct ContentView: View {
 
 struct TabBar: View {
     
-    
-    
-    var card: Card
-    
     var body: some View {
         TabView{
             Text("Home")
@@ -64,7 +60,7 @@ struct TabBar: View {
                     
                 }
             
-            ContentView(card: card)
+            ContentView()
                 .tabItem {
                     Image(systemName: "magnifyingglass")
                     
@@ -88,11 +84,11 @@ struct TabBar: View {
                     
                 }
         }.accentColor(.black)
-        .background(Color.white) // Imposta lo sfondo bianco
+        .background(Color.white) 
     }
 }
 
 
 #Preview {
-    TabBar(card: Card(imageName: "sediaDiLegno", title: "sedia di legno", price: 49, description: "Perfect for watching old TV Shows.", objectName: "chair", size: "22 x 22 x 22", color: "red"))
+    TabBar()
 }

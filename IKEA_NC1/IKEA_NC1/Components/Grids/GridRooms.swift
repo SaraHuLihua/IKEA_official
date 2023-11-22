@@ -13,15 +13,12 @@ struct GridRooms: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 10) {
-                ForEach(0..<10) { index in
+                ForEach(0..<4) { index in
                     Button(action:{}, label: {
-                        RoundedRectangle(cornerRadius: 5)
-                            .foregroundColor(.gray)
+                        Image("room\(index+1)")
+                            .resizable()
                             .frame(width: 175, height: 270)
-                            .overlay(
-                                Text("(index + 1)")
-                                    .foregroundColor(.white)
-                            )
+                            .clipShape(RoundedRectangle(cornerRadius: 10))
                         }
                     )
                 }

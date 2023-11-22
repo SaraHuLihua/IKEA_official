@@ -11,7 +11,7 @@ import SwiftUI
 struct IKEA_NC1App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(card: Card(imageName: "sediaDiLegno", title: "sedia di legno", price: 49, description: "Perfect for watching old TV Shows.", objectName: "chair", size: "22 x 22 x 22", color: "red"))
+            TabBar()
         }
     }
 }

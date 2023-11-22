@@ -22,14 +22,13 @@ struct GridProducts: View {
         ScrollView {
             LazyVGrid(columns: columns, spacing: 10) {
                 ForEach(cards) { element in
-                    //NavigationLink(destination: )){
-   
-                    ForEach(0..<4){ index in
-                        Image("product\(index + 1)")                             
+                    NavigationLink(destination: ProductDetailView(card: element)){
+                        Image(element.imageName[0])
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .cornerRadius(10)
                             .frame(width: imageWidth, height: imageHeight)
+                            .scaledToFit()
+                            .clipShape(RoundedRectangle(cornerRadius: 10.0))
+
                     }
                    // }
                 }
@@ -40,6 +39,6 @@ struct GridProducts: View {
 }
 
 #Preview {
-    GridProducts(cards: [Card(imageName: "", title: "", price: 0.0, description: "", objectName: "", size: "", color: "red"),Card(imageName: "", title: "", price: 0.0, description: "", objectName: "", size: "", color: "red")])
+    GridProducts(cards: [Card(imageName: ["chairFront","chairSide","chairBack"], title: "Placeholder", price: 49, description: "Placeholder", objectName: "chair_swan", size: "22 x 22 x 22", color: "red"),Card(imageName: ["vaseFront","vaseSide","vaseBack"], title: "Placeholder", price: 49, description: "Placeholder", objectName: "flower_tulip", size: "22 x 22 x 22", color: "red")])
 }
 

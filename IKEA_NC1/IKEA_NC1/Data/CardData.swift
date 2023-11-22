@@ -10,7 +10,7 @@ import SwiftUI
 
 struct Card: Identifiable{
     var id = UUID()
-    var imageName: String
+    var imageName: [String]
     var title: String
     var price: Double
     var description: String

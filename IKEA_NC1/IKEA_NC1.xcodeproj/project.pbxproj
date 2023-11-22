@@ -20,6 +20,9 @@
 		097DAF9D2B0E5F1200A701AB /* GridRooms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097DAF9C2B0E5F1200A701AB /* GridRooms.swift */; };
 		097DAF9F2B0E62DC00A701AB /* SegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097DAF9E2B0E62DC00A701AB /* SegmentedControl.swift */; };
 		097DAFA22B0E664E00A701AB /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097DAFA12B0E664E00A701AB /* ProductDetailView.swift */; };
+		8EA193162B0E7E820064A8DB /* flower_tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8EA193152B0E7E820064A8DB /* flower_tulip.usdz */; };
+		8EA193182B0E7EB40064A8DB /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8EA193172B0E7EB40064A8DB /* chair_swan.usdz */; };
+		8EA1931A2B0E7EBD0064A8DB /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 8EA193192B0E7EBD0064A8DB /* tv_retro.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		097DAF9C2B0E5F1200A701AB /* GridRooms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridRooms.swift; sourceTree = "<group>"; };
 		097DAF9E2B0E62DC00A701AB /* SegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedControl.swift; sourceTree = "<group>"; };
 		097DAFA12B0E664E00A701AB /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		8EA193152B0E7E820064A8DB /* flower_tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower_tulip.usdz; sourceTree = "<group>"; };
+		8EA193172B0E7EB40064A8DB /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		8EA193192B0E7EBD0064A8DB /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 			isa = PBXGroup;
 			children = (
 				097DAF852B0E5AD000A701AB /* Preview Assets.xcassets */,
+				8EA193152B0E7E820064A8DB /* flower_tulip.usdz */,
+				8EA193172B0E7EB40064A8DB /* chair_swan.usdz */,
+				8EA193192B0E7EBD0064A8DB /* tv_retro.usdz */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -184,7 +193,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EA193162B0E7E820064A8DB /* flower_tulip.usdz in Resources */,
 				097DAF862B0E5AD000A701AB /* Preview Assets.xcassets in Resources */,
+				8EA193182B0E7EB40064A8DB /* chair_swan.usdz in Resources */,
+				8EA1931A2B0E7EBD0064A8DB /* tv_retro.usdz in Resources */,
 				097DAF832B0E5AD000A701AB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
